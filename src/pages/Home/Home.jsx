@@ -1,9 +1,16 @@
 import React from 'react'
 import './Home.css'
 
+import { Hero, ResultGallery, SearchForm } from '../../components';
+
+
 const Home = () => {
   return (
-    <section>Home</section>
+    <section>
+      <Hero />
+      <SearchForm />
+      <ResultGallery />
+    </section>
   )
 }
 
