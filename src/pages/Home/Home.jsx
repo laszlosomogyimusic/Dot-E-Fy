@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
 
-import { Hero, ResultGallery, SearchForm } from '../../components';
-
+import { Hero, SearchBar, SearchResults } from '../../components';
 
 const Home = () => {
+  const [results, setResults] = useState([]);
+
   return (
     <section>
       <Hero />
-      <SearchForm />
-      <ResultGallery />
+      <SearchBar setResults={setResults} />
+      <SearchResults results={results}/>
     </section>
   )
 }
