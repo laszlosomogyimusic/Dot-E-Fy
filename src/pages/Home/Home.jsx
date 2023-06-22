@@ -5,7 +5,7 @@ import { Hero, Search } from '../../components';
 
 const Home = () => {
   return (
-    <section>
+    <section className="home">
       <Hero />
       <Search />
     </section>

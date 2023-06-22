@@ -6,7 +6,6 @@ import ResultCard from './ResultCard/ResultCard';
 import ResultGallery from './ResultGallery/ResultGallery';
 import Search from './Search/Search';
 import SearchBar from './SearchBar/SearchBar';
-import SearchResults from './SearchResults/SearchResults';
 
 export {
   ContactForm,
@@ -17,5 +16,4 @@ export {
   ResultGallery,
   Search,
   SearchBar,
-  SearchResults,
 }

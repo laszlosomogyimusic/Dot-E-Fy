@@ -1,16 +1,13 @@
 import React, { useState } from 'react'
-import { Container } from "react-bootstrap"
-import { SearchBar, SearchResults } from '../../components';
-
-import API from "../../utils/API";
+import { SearchBar, ResultGallery } from '../../components';
 
 const Search = () => {
   const [results, setResults] = useState([]);
 
   return (
-    <section>
+    <section className="search">
       <SearchBar setResults={setResults} />
-      <SearchResults results={results}/>
+      <ResultGallery results={results}/>
     </section>
   )
 }
