@@ -3,7 +3,7 @@ import axios from "axios";
 
 import './Contact.css'
 
-import { ContactForm } from '../../components';
+//import { ContactForm } from '../../components';
 
 
 class Contact extends React.Component {
@@ -32,7 +32,7 @@ class Contact extends React.Component {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
       })
       .then(function (response) {
-        
+
       })
       .then(function (error) {
         //Error Callback
@@ -46,23 +46,42 @@ class Contact extends React.Component {
   render() {
     return (
       <section>
-        <h1>Contact Us</h1>
-        <input
-          name="name"
-          placeholder="Enter Name :"
-          onChange={this.saveInputs}
-        />
-        <br />
-        <input
-          name="email"
-          placeholder="Enter Email :"
-          onChange={this.saveInputs}
-        />
-        <br />
-        <button id="save_data" onClick={this.saveData}>
-          Submit
-        </button>
-        <br />
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h1>Contact Us</h1>
+              <p>
+                Got questions or ideas for future development?<br /><br />
+
+                We'd love to hear from you! Simply fill out the form below and let us know how we can assist you. Whether you have inquiries about our services, suggestions for new features, or any other requests, our team is here to listen and support you.</p>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="contactForm col-md-10">
+                <p>Name:</p>
+                <input
+                  name="name"
+                  placeholder="Enter Name :"
+                  onChange={this.saveInputs}
+                />
+
+                <input
+                  name="email"
+                  placeholder="Enter Email :"
+                  onChange={this.saveInputs}
+                />
+
+                <button className="CTA" id="save_data" onClick={this.saveData}>
+                  Submit
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     )
   }

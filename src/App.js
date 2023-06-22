@@ -6,6 +6,8 @@ import './App.css'
 import { Footer, Navbar } from './components';
 import { AboutUs, Contact, Home } from './pages';
 
+import "../src/index.css"
+
 
 const App = () => {
   return (
