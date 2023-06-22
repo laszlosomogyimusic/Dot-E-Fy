@@ -13,13 +13,13 @@ class Contact extends React.Component {
 
   saveInputs = (event) => {
     var key = event.target.name;
-    this.state.input[key] = event.target.value;
+    //this.state.input[key] = event.target.value;
     this.setState({ [key]: event.target.value });
   };
 
   saveData = () => {
     // console.log(this.state);
-    var currentthis = this;
+   // var currentthis = this;
 
     // console.log(this.state.input);
     var formData = new FormData();
@@ -61,18 +61,33 @@ class Contact extends React.Component {
           <div className="row">
             <div className="col-md-12">
               <div className="contactForm col-md-10">
-                <p>Name:</p>
-                <input
-                  name="name"
-                  placeholder="Enter Name :"
-                  onChange={this.saveInputs}
-                />
+                <div className='formRow'>
+                  <p>Name:</p>
+                  <input
+                    name="name"
+                    placeholder="Enter Name :"
+                    onChange={this.saveInputs}
+                  />
+                </div>
 
-                <input
-                  name="email"
-                  placeholder="Enter Email :"
-                  onChange={this.saveInputs}
-                />
+                <div className='formRow'>
+                  <p>Your Email:</p>
+                  <input
+                    name="email"
+                    placeholder="Enter Email :"
+                    onChange={this.saveInputs}
+                  />
+                </div>
+
+                <div className='formRow'>
+                  <p>Message:</p>
+                  <input 
+                    id="message"
+                    name="message"
+                    placeholder="Enter Message :"
+                    onChange={this.saveInputs}
+                  />
+                </div>
 
                 <button className="CTA" id="save_data" onClick={this.saveData}>
                   Submit
