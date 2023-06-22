@@ -28,9 +28,7 @@ class Contact extends React.Component {
     }
 
     axios
-      .post("https://35539c68-29fb-44c6-a116-2ae9a1b447b1.mock.pstmn.io/post", formData, {
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      })
+      .post("https://ce707595-c326-4cd4-a947-8c05d35e6ded.mock.pstmn.io/post", formData)
       .then(function (response) {
 
       })

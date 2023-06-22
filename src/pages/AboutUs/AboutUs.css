@@ -1,0 +1,28 @@
+@import "../../index.css";
+
+
+.team-member{
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;    
+
+    background-color: var(--color-green);
+    padding:3rem 2rem !important;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+
+    color: var(--color-white);
+}
+
+.contact-buttons{
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 1rem;
+align-items: center;
+justify-content: center;
+padding-top: 1rem;
+
+}
