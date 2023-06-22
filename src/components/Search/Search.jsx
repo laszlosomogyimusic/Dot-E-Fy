@@ -1,52 +1,18 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { Container } from "react-bootstrap"
-import { SearchResults } from "../index";
+import { SearchBar, SearchResults } from '../../components';
 
 import API from "../../utils/API";
 
-class Search extends Component {
-  state = {
-    search: "",
-    results: [],
-    error: ""
-  };
+const Search = () => {
+  const [results, setResults] = useState([]);
 
-  // When the component mounts, get a list of all available base breeds and update this.state.breeds
-  componentDidMount() {
-
-  }  
-
-  handleInputChange = event => {
-    this.setState({ search: event.target.value });
-  };
-
-  handleFormSubmit = event => {
-    event.preventDefault();
-    console.log(this.state.search);
-    API.search(this.state.search)
-      .then(res => {
-        console.log(res.data.message);
-        if (res.data.status === "error") {
-          throw new Error(res.data.message);
-        }
-        this.setState({ results: res.data.message, error: "" });
-      })
-      .catch(err => this.setState({ error: err.message }));
-  };
-
-
-  render() {
-    return (
-      <article>
-        <Container style={{ minHeight: "80%" }}>
-          <h1 className="text-center">Search By Breed!</h1>
-
-          <SearchResults results={this.state.results} />
-        </Container>
-      </article>
-    )
-  }
-
+  return (
+    <section>
+      <SearchBar setResults={setResults} />
+      <SearchResults results={results}/>
+    </section>
+  )
 }
 
 export default Search
