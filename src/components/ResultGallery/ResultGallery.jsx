@@ -13,6 +13,7 @@ const ResultGallery = ({ results }) => {
                   artistName={result.result.artist_names} 
                   fullTitle={result.result.full_title}
                   headerImageThumbnailURL={result.result.header_image_thumbnail_url}
+                  lyricsUrl={result.result.url}
                   key={id}
                 />
       })}

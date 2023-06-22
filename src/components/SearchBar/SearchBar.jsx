@@ -23,12 +23,19 @@ const SearchBar = ({ setResults }) => {
     searchLyrics(input);
   }
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleSubmit();
+    }
+  }
+
   return (
     <section className="search-bar">
       <input className="search-input"
         placeholder="Type to search..."
         value={input}
         onChange={(e) => handleChange(e.target.value)}
+        onKeyDown={handleKeyDown}
       />
       <button className="search-button" onClick={(e) => handleSubmit()}>Search</button>
     </section>
