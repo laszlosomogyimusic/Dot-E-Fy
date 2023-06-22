@@ -1,15 +1,13 @@
 import React from 'react'
 import './Home.css'
 
-import { Hero, ResultGallery, SearchForm } from '../../components';
-
+import { Hero, Search } from '../../components';
 
 const Home = () => {
   return (
-    <section>
+    <section className="home">
       <Hero />
-      <SearchForm />
-      <ResultGallery />
+      <Search />
     </section>
   )
 }

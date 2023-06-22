@@ -4,7 +4,8 @@ import Hero from './Hero/Hero';
 import Navbar from './Navbar/Navbar';
 import ResultCard from './ResultCard/ResultCard';
 import ResultGallery from './ResultGallery/ResultGallery';
-import SearchForm from './SearchForm/SearchForm';
+import Search from './Search/Search';
+import SearchBar from './SearchBar/SearchBar';
 
 export {
   ContactForm,
@@ -13,5 +14,6 @@ export {
   Navbar,
   ResultCard,
   ResultGallery,
-  SearchForm,
+  Search,
+  SearchBar,
 }
