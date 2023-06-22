@@ -7,8 +7,6 @@ const config = {
   }
 };
 
-export default {
-  search: function(searchText) {
+export default function search(searchText) {
     return axios.get(`https://genius-song-lyrics1.p.rapidapi.com/search/?q=${searchText}`, config);
-  },
 };
