@@ -20,6 +20,10 @@
     margin-right: 0.5rem !important;
 }
 
+.nav-item{
+    font-size: 18px;
+}
+
 .active{
     color: var(--color-black);
     font-weight: 600 !important;
