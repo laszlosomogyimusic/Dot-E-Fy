@@ -1,0 +1,14 @@
+@import "../../index.css";
+
+.hero-row{
+    align-items: center;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+}
+
+.hero-p{
+    color: var(--color-light-brown) !important;
+}
