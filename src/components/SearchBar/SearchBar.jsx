@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import './SearchBar.css'
 
-import API from "../../utils/API";
+import lyricsSearch from "../../utils/API";
 
 const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState("");
 
   const searchLyrics = (value) => {
-    API.search(value)
+    lyricsSearch(value)
       .then(response => {
         setResults(response.data.hits);
       })
