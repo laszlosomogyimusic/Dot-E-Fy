@@ -1,0 +1,15 @@
+@import "../../index.css";
+
+.team{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.team-member{
+    background-color: var(--color-green);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+
+}
