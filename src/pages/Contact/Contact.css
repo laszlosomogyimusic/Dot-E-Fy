@@ -27,12 +27,17 @@
     color: var(--color-white);
 }
 
-.contactForm input {
+.contactForm input, textarea {
     padding: 1rem;
     border-radius: 10px;
     border: 2px solid var(--color-light-brown);
 }
 
-input #message{
-    height: 3rem;
+#message{
+    padding-bottom: 6rem ;
+}
+
+.contactForm button{
+    align-self: flex-end;
+    border: none;
 }
