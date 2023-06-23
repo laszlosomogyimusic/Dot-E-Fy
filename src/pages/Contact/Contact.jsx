@@ -46,12 +46,12 @@ class Contact extends React.Component {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-10">
               <h1>Contact Us</h1>
               <p>
                 Got questions or ideas for future development?<br /><br />
 
-                We'd love to hear from you! Simply fill out the form below and let us know how we can assist you. Whether you have inquiries about our services, suggestions for new features, or any other requests, our team is here to listen and support you.</p>
+                We'd love to hear from you! Fill out the form below and let us know how we can assist you. Whether you have inquiries about our services, suggestions for new features, or any other requests, our team is here to listen and support you. </p>
             </div>
           </div>
         </div>
@@ -79,16 +79,17 @@ class Contact extends React.Component {
 
                 <div className='formRow'>
                   <p>Message:</p>
-                  <input 
+                  <textarea 
                     id="message"
                     name="message"
                     placeholder="Enter Message :"
-                    onChange={this.saveInputs}
-                  />
+                    onChange={this.saveInputs}>
+
+                    </textarea>
                 </div>
 
                 <button className="CTA" id="save_data" onClick={this.saveData}>
-                  Submit
+                  Submit Message
                 </button>
 
               </div>
