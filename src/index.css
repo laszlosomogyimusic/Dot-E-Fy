@@ -8,7 +8,7 @@
 
   --color-green: #00493b;
   --color-black: #1B1725;
-  --color-grey: #545454;
+  --color-grey: #a8a8a8;
   --color-light-green: #37AC66;
   --color-white: #fcfcfa;
   --color-dark-brown: #312C33;
@@ -25,7 +25,7 @@
 }
 
 /* Structural elements */
-main{
+main {
   background-color: var(--color-white);
 }
 
@@ -49,22 +49,37 @@ h1 {
   line-height: 72px !important;
 }
 
+h2{
+  color: var(--color-black) !important;
+
+  font-size: 40px !important;
+  font-family: var(--font-base) !important;
+  font-weight: 600 !important;
+  line-height: 56px !important;
+}
+
 p {
   font-size: 20px;
   font-family: var(--font-alt);
   margin: 0 !important;
-  
+
 }
 
 /* Buttons */
 
-.CTA{
+.CTA {
   background-color: var(--color-light-green);
   color: var(--color-white);
   border-radius: 10px;
   padding: 10px 24px;
   text-decoration: none;
-  
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 500;
+}
+
+.CTA:focus, .CTA:hover{
+  box-shadow: 0px 2px 10px 0px rgba(45, 175, 50, 0.3);;
 }
 
 
@@ -76,11 +91,17 @@ p {
 
   h1 {
     color: var(--color-black) !important;
-  
+
     font-size: 48px !important;
     font-family: var(--font-base) !important;
     font-weight: 700 !important;
     line-height: 56px !important;
   }
 
+}
+/* Overwriting bootstrap focus state*/
+input:focus, textarea:focus {
+  outline: none !important;
+  border: 3px solid var(--color-light-green) !important;
+  
 }
