@@ -8,15 +8,17 @@ const ResultGallery = ({ results }) => {
 
   return (
     <section className="result-gallery">
-      {results.map((result, id) => {
-        return < ResultCard 
-                  artistName={result.result.artist_names} 
-                  fullTitle={result.result.full_title}
-                  headerImageThumbnailURL={result.result.header_image_thumbnail_url}
-                  lyricsUrl={result.result.url}
-                  key={id}
-                />
-      })}
+      
+          {results.map((result, id) => {
+            return < ResultCard
+              artistName={result.result.artist_names}
+              fullTitle={result.result.full_title}
+              headerImageThumbnailURL={result.result.header_image_thumbnail_url}
+              lyricsUrl={result.result.url}
+              key={id}
+            />
+          })}
+      
     </section>
   );
 }

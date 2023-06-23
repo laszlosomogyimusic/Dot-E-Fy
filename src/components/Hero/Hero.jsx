@@ -15,6 +15,7 @@ const Hero = () => {
           <div className="col-md-5 hero-image">
             <img src={heroImage} alt="Woman listening to music on headphones" className="img-fluid"/>
           </div>
+          
         </div>
       </div>
     </div>
