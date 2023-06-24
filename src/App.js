@@ -23,8 +23,6 @@ const App = () => {
     config: { tension: 50, friction: 10 },
   })
 
-  
-  console.log(fade);
   return (
     <Router>
       <animated.main style={fade}>
