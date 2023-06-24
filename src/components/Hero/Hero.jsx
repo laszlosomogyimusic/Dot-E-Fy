@@ -2,19 +2,22 @@ import React from 'react'
 import './Hero.css'
 
 //Spring
-import {useSpring, animated} from "@react-spring/web";
+import { useSpring, animated } from "@react-spring/web";
 
 import heroImage from "../../images/heroImage.png"
+
 
 const Hero = () => {
 
   // Big turn animation on X axis
   const [rollIn] = useSpring(
     () => ({
-      from: { opacity: 0,
+      from: {
+        opacity: 0,
         transform: 'perspective(600px) rotateX(90deg)'
       },
-      to: { opacity: 1,
+      to: {
+        opacity: 1,
         transform: 'perspective(600px) rotateX(0deg)'
       },
       config: { duration: 1000 }
@@ -25,10 +28,12 @@ const Hero = () => {
   // Small turn animation on X axis
   const [rollInSmall] = useSpring(
     () => ({
-      from: { opacity: 0,
+      from: {
+        opacity: 0,
         transform: 'perspective(600px) rotateX(45deg)'
       },
-      to: { opacity: 1,
+      to: {
+        opacity: 1,
         transform: 'perspective(600px) rotateX(0deg)'
       },
       config: { duration: 1000 }
@@ -39,10 +44,12 @@ const Hero = () => {
   // Big turn animation on X axis
   const [imageIntro] = useSpring(
     () => ({
-      from: { opacity: 0,
+      from: {
+        opacity: 0,
         transform: 'perspective(600px) rotateY(180deg)'
       },
-      to: { opacity: 1,
+      to: {
+        opacity: 1,
         transform: 'perspective(600px) rotateY(0deg)'
       },
       config: { duration: 1000 }
@@ -50,8 +57,9 @@ const Hero = () => {
     []
   )
 
-  
+
   return (
+
     <div className="jumbotron">
       <div className="container">
         <div className="row hero-row">
@@ -62,7 +70,7 @@ const Hero = () => {
           <div className="col-md-5 hero-image">
             <animated.img style={imageIntro} src={heroImage} alt="Woman listening to music on headphones" className="img-fluid"></animated.img>
           </div>
-          
+
         </div>
       </div>
     </div>
