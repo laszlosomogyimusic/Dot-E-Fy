@@ -8,13 +8,28 @@
     gap: 0.5rem;    
 
     background-color: var(--color-green);
-    padding:3rem 2rem !important;
+    padding: 2.5rem 2rem !important;
+    padding-top: 11rem !important;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
 
     color: var(--color-white);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px !important;
 }
 
+.team-member img{
+    border-radius: 300px;
+    border: 6px solid var(--color-light-green);
+    position: absolute;
+    top: -90px;
+    height: 250px !important;
+    width: 250px !important;
+    box-shadow: var(--box-shadow);
+
+}
 .contact-buttons{
 
 display: flex;
@@ -26,3 +41,15 @@ justify-content: center;
 padding-top: 1rem;
 
 }
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    
+    .row{
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;    
+    
+    }
+  }

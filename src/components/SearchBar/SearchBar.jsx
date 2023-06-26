@@ -31,13 +31,13 @@ const SearchBar = ({ setResults }) => {
 
   return (
     <section className="search-bar">
-      <input className="search-input"
-        placeholder="Type to search..."
+      <input
+        placeholder="Search by an artist, song..."
         value={input}
         onChange={(e) => handleChange(e.target.value)}
         onKeyDown={handleKeyDown}
       />
-      <button className="search-button" onClick={(e) => handleSubmit()}>Search</button>
+      <button className="search-button CTA" onClick={(e) => handleSubmit()}>Search</button>
     </section>
   );
 }

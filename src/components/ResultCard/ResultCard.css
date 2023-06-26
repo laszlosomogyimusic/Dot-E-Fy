@@ -1,3 +1,30 @@
-.result-card{
+@import "../../index.css";
+
+.card{
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 300px;
+    
+
+    padding: 8px;
+
+    border-radius: 10px !important;
+    box-shadow: var(--box-shadow);
+}
+
+.card img{
+    border-radius: 10px !important;
+    height: 282px;
+    object-fit: cover;
+}
+
+.result-card h3{
+    font-size: 24px;
+    margin: 0;
+    
+}
+.result-card p{
+    font-size: 18px;
+    color: var(--color-light-brown);
 }
