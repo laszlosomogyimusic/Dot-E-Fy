@@ -1,0 +1,12 @@
+@import "../../index.css";
+
+.content-row h2{
+    text-align: start;
+}
+
+.content-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important
+}
