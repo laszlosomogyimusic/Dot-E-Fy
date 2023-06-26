@@ -1,6 +1,6 @@
 # Dotefy - lyrics search
 
-## Desctiption
+## Description
 
 This app is using Genius API to search lyrics for any song. 
 
