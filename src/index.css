@@ -30,7 +30,7 @@ main {
 }
 
 .row {
-  padding-bottom: 3rem !important;
+  padding-bottom: 2rem !important;
   margin: 0 !important;
 }
 
@@ -105,3 +105,4 @@ input:focus, textarea:focus {
   border: 3px solid var(--color-light-green) !important;
   
 }
+
