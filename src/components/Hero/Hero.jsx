@@ -60,7 +60,7 @@ const Hero = () => {
 
   return (
 
-    <div className="jumbotron">
+    <section className="jumbotron">
       <div className="container">
         <div className="row hero-row">
           <div className="col-md-6 hero-text">
@@ -73,7 +73,7 @@ const Hero = () => {
 
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
