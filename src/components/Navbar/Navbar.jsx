@@ -6,7 +6,7 @@ import logo from "../../images/logoName.png"
 
 const Navbar = () => {
   return (
-    <div className="container">
+    <section className="container">
       <div className="row">
         <div className="col-md-12">
           <nav className="navbar navbar-expand-lg navbar-light">
@@ -57,7 +57,7 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
